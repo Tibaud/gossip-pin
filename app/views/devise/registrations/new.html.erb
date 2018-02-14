@@ -8,6 +8,8 @@
     <%= f.input :email, required: true, autofocus: true %>
     <%= f.input :password, required: true, hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length) %>
     <%= f.input :password_confirmation, required: true %>
+    <%= f.label "Votre code promo ?" %><br />
+<%= f.text_field :sign_up_code %>
   </div>
 
   <div class="form-actions">
